@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    tools:context=".messages.ChatLogActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar2"
+            app:titleTextColor="@color/bckd"
+            android:background="@color/startgreen"
+            app:title="SELECT USER"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="100"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        >
+        <EditText
+            android:id="@+id/edittext_chatlog"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="8dp"
+            android:layout_gravity="center"
+            android:paddingBottom="5dp"
+            android:layout_weight="75"
+            android:background="@drawable/edittext_background"
+            android:textColor="@android:color/black"
+            android:hint="Enter the message"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/send_button_chatlog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_gravity="center"
+            android:text="SEND"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:backgroundTint="@color/startgreen"
+            app:cornerRadius="15dp"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_chatlog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/ll1"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/chat_to_row"
+        />
+
+
+</RelativeLayout>

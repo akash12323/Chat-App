@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#62E267</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="bckd">#2B292A</color>
+    <color name="card">#FCF9FB</color>
+
+    <color name="green">#08CBE4</color>
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
+    <color name="startgreen">#7FF384</color>
+    <color name="bg">#E6F7E7</color>
+    <color name="c1">#4D5FBE</color>
+    <color name="c2">#8AF38D</color>
+    <color name="c3">#09c6df</color>
+
+</resources>

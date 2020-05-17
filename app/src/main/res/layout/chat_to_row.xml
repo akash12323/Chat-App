@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:visibility="gone"
+        android:id="@+id/reciever_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/varun"
+        android:layout_gravity="top"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_to_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:maxWidth="250dp"
+        android:layout_gravity="top"
+        android:layout_marginStart="15dp"
+        android:text="This message is sent to the user from one oof his/her friend"
+        android:background="@drawable/edittext_background"
+        />
+
+</LinearLayout>
